@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Motiwa</string>
+    <string name="main_activity_ad_banner_id">ca-app-pub-4069362318810897/3520411449</string>
+    <string name="main_activity_ad_test_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="settings_activity_ad_interstitial_id">ca-app-pub-4069362318810897/4226024423</string>
+    <string name="settings_activity_ad_test_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="main_activity_ad_interstitial_id">ca-app-pub-4069362318810897/7109775814</string>
+</resources>

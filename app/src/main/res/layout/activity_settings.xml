@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_gradient"
+    android:orientation="vertical"
+    tools:context=".view.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cardview_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ek Kategoriler"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="activeApplyButton"
+            android:tag="love_and_relationships"
+            android:text="Aşk ve İlişkiler"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="activeApplyButton"
+            android:tag="business_and_career"
+            android:text="İş ve Kariyer"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="activeApplyButton"
+            android:tag="money_and_success"
+            android:text="Para ve Başarı"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxReadLearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="activeApplyButton"
+            android:tag="read_and_learn"
+            android:text="Okumak ve Öğrenmek"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxArt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="activeApplyButton"
+            android:tag="art_and_creativity"
+            android:text="Sanat ve Yaratıcılık"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:backgroundTint="#000000"
+            android:onClick="apply"
+            android:text="Değişiklikleri Uygula"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cardview_bg"
+        android:onClick="goFavorites"
+        android:text="Olumlamalar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/goFavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cardview_bg"
+        android:foreground="@drawable/cardview_bg"
+        android:onClick="goFavorites"
+        android:text="Favoriler"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cardview_bg"
+        android:checked="true"
+        android:padding="10dp"
+        android:text="Bildirimler"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</LinearLayout>
